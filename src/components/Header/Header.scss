@@ -5,6 +5,11 @@ header {
    padding: 2rem;
 
    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+
       ul {
          display: flex;
          flex-direction: row;
@@ -21,4 +26,28 @@ header {
          }
       }
    }
+
+   .social-links {
+      display: flex;
+      align-items: center;
+      margin: auto 0;
+      gap: 2rem;
+
+      a {
+         font-size: 1.875rem;
+         display: grid;
+         place-items: center;
+         transition: .2s;
+
+
+         &:hover {
+            color: var(--yellow-500);
+         }
+      }
+   }
+}
+
+.activeLink {
+   border-bottom: .25rem solid var(--yellow-500);
+   border-radius: .125rem;
 }

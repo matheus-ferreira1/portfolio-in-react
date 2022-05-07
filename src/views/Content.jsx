@@ -5,6 +5,7 @@ import Sobre from './Sobre'
 import Skills from './Skills'
 import Projetos from './Projetos'
 import NotFound from './NotFound'
+import Contato from './Contato'
 
 const Content = () => {
    return (
@@ -14,6 +15,7 @@ const Content = () => {
             <Route path='/about' element={<Sobre />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projetos />} />
+            <Route path='/contato' element={<Contato />} />
             <Route path='/*' element={<NotFound />} />
          </Routes>
       </div>

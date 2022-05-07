@@ -1,27 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import MyLink from './MyLink';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import './Header.scss'
 
 const Header = () => {
+
    return (
       <header>
          <h1>Matheus Ferreira</h1>
 
          <nav>
             <ul>
-               <li>
-                  <Link to='/'>Início</Link>
-               </li>
-               <li>
-                  <Link to='/about'>Sobre mim</Link>
-               </li>
-               <li>
-                  <Link to='/skills'>Habilidades</Link>
-               </li>
-               <li>
-                  <Link to='/projects'>Portfolio</Link>
-               </li>
+               <MyLink to='/'>Início</MyLink>
+               <MyLink to='/about'>Sobre mim</MyLink>
+               <MyLink to='/skills'>Habilidades</MyLink>
+               <MyLink to='/projects'>Portfolio</MyLink>
+               <MyLink to='/contato'>Contato</MyLink>
             </ul>
+
+            <div className="social-links">
+               <a target='_blank' href="https://www.linkedin.com/in/matheus-ferreira33/">
+                  <FaLinkedin />
+               </a>
+               <a target='_blank' href="https://github.com/matheus-ferreira1">
+                  <FaGithub />
+               </a>
+            </div>
          </nav>
       </header>
    )
