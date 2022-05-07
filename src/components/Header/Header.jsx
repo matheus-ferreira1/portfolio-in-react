@@ -19,10 +19,18 @@ const Header = () => {
             </ul>
 
             <div className="social-links">
-               <a target='_blank' href="https://www.linkedin.com/in/matheus-ferreira33/">
+               <a
+                  rel="noreferrer"
+                  target='_blank'
+                  href="https://www.linkedin.com/in/matheus-ferreira33/"
+               >
                   <FaLinkedin />
                </a>
-               <a target='_blank' href="https://github.com/matheus-ferreira1">
+               <a
+                  rel="noreferrer"
+                  target='_blank'
+                  href="https://github.com/matheus-ferreira1"
+               >
                   <FaGithub />
                </a>
             </div>

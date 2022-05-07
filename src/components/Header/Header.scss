@@ -3,6 +3,7 @@ header {
    justify-content: space-between;
    align-items: center;
    padding: 2rem;
+   outline: 1px solid var(--gray-700);
 
    nav {
       display: flex;
@@ -18,10 +19,10 @@ header {
          a {
             font-size: 1.125rem;
             padding: .5rem 0;
+            transition: .25s;
 
             &:hover {
                border-bottom: .25rem solid var(--yellow-500);
-               border-radius: .125rem;
             }
          }
       }
@@ -49,5 +50,4 @@ header {
 
 .activeLink {
    border-bottom: .25rem solid var(--yellow-500);
-   border-radius: .125rem;
 }
